@@ -7,11 +7,11 @@ bin:
 	@go build -o bin/server ./server
 	@go build -o bin/client ./client
 
-.PHONY: run/server
+.PHONY: run/server/nil
 run/server/nil: bin
 	./bin/server -nil
 
-.PHONY: run/server
+.PHONY: run/server/nonnil
 run/server/nonnil: bin
 	./bin/server
 
